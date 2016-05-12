@@ -1,0 +1,250 @@
+<!doctype html>
+<html>
+  <head>
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" name="viewport">
+
+    <!-- Use title if it's in the page YAML frontmatter -->
+    <title>Room 172</title>
+
+    <script src="https://use.typekit.net/iaf1hlx.js"></script>
+    <script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+    <script src="https://use.fontawesome.com/1f38e3a53c.js"></script>
+
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+  </head>
+
+  <body class="index">
+    <header class="header" id="particles-js">
+  <section class="hero container">
+
+
+    <div class="hero--top columns">
+      <div class="column">
+        <a href="" class="menu-button" id="menuButton">
+          <span class="burger-icon"></span>
+        </a>
+      </div>
+    </div>
+
+
+    <div class="hero--inner">
+      <a class="hero--inner__title">
+        <h1>Room 172</h1>
+      </a>
+
+      <h4 class="hero--inner__sub-title">
+        St. Thomas Aquinas
+        <br>
+        <strong>Art Show</strong>
+      </h4>
+
+      <h4 class="hero--inner__info">
+        Wednesday, May 25th
+        <br>
+        <a href="#map">@ The Arts Project</a>
+      </h4>
+    </div>
+
+
+    <div class="hero--bottom">
+      <p class="hero--bottom__credit">
+        <span>Made by <a href="">Logan Manuel</a></span>
+      </p>
+      <a href="#about" class="hero--bottom__link-down">
+        <span></span>
+      </a>
+      <a href="#" class="hero--bottom__social-link" id="socialButton">
+        <div class="social-link__items">
+          <span class="social-link__item"><i class="fa fa-instagram" aria-hidden="true"></i></span>
+          <span class="social-link__item"><i class="fa fa-twitter" aria-hidden="true"></i></span>
+        </div>
+        <span class="icon"></span>
+      </a>
+    </div>
+
+    <div class="hero--side-menu" id="sideMenu">
+      <div class="side-menu--top">
+        <a class="side-menu--top__link" href="#about">About</a>
+        <a class="side-menu--top__link" href="#info">Info</a>
+        <a class="side-menu--top__link" href="#map">Map</a>
+      </div>
+
+      <div class="side-menu--bottom">
+        <p class="side-menu--bottom__tag">Share with your friends!</p>
+        <div class="side-menu--bottom__links">
+          <a href="" class="side-menu--bottom__link"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+          <a href="" class="side-menu--bottom__link"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+        </div>
+      </div>
+    </div>
+  </section>
+</header>
+
+<section class="about" id="about">
+  <div class="container">
+    <div class="columns">
+      <div class="column col-3 text-right">
+        <h1 class="about__title">
+          About
+          <br>
+          Room
+          <br>
+          172.
+        </h1>
+      </div>
+      <div class="column col-1"></div>
+      <div class="column col-6">
+        <p class="about__copy">
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic sed nihil facilis amet omnis rerum at quam tempora aliquam repudiandae odit, cumque, veritatis quibusdam, exercitationem in ullam quos? Itaque, aspernatur.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="info" id="info">
+  <div class="container">
+    <div class="columns">
+      <div class="column col-3 text-right">
+        <h1 class="info__title">
+          Who,
+          <br>
+          When,
+          <br>
+          Where?
+        </h1>
+      </div>
+      <div class="column col-1"></div>
+      <div class="column col-6">
+        <ul class="info__copy">
+          <li>St. Thomas Aquinas Art Class</li>
+          <li>Wednesday, May 25th</li>
+          <li>7:00 - 10:00PM</li>
+          <li>@ The Arts Project</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyDof-Pe32WwNCh9LYjE1xImqKNrH-K6UdU&sensor=false&extension=.js'></script>
+
+<script>
+    google.maps.event.addDomListener(window, 'load', init);
+    var map;
+    function init() {
+        var mapOptions = {
+            center: new google.maps.LatLng(42.990287,-81.240157),
+            zoom: 15,
+            zoomControl: true,
+            zoomControlOptions: {
+                style: google.maps.ZoomControlStyle.DEFAULT,
+            },
+            disableDoubleClickZoom: true,
+            mapTypeControl: true,
+            mapTypeControlOptions: {
+                style: google.maps.MapTypeControlStyle.DROPDOWN_MENU,
+            },
+            scaleControl: true,
+            scrollwheel: false,
+            panControl: true,
+            streetViewControl: true,
+            draggable : true,
+            overviewMapControl: true,
+            overviewMapControlOptions: {
+                opened: false,
+            },
+            mapTypeId: google.maps.MapTypeId.ROADMAP,
+            styles: [{"stylers":[{"hue":"#ff1a00"},{"invert_lightness":true},{"saturation":-100},{"lightness":33},{"gamma":0.5}]},{"featureType":"water","elementType":"geometry","stylers":[{"color":"#2D333C"}]}],
+        }
+        var mapElement = document.getElementById('map');
+        var map = new google.maps.Map(mapElement, mapOptions);
+        var locations = [
+['The Arts Project', 'undefined', 'undefined', 'undefined', 'undefined', 42.9869502, -81.243177, 'https://mapbuildr.com/assets/img/markers/default.png']
+        ];
+        for (i = 0; i < locations.length; i++) {
+			if (locations[i][1] =='undefined'){ description ='';} else { description = locations[i][1];}
+			if (locations[i][2] =='undefined'){ telephone ='';} else { telephone = locations[i][2];}
+			if (locations[i][3] =='undefined'){ email ='';} else { email = locations[i][3];}
+           if (locations[i][4] =='undefined'){ web ='';} else { web = locations[i][4];}
+           if (locations[i][7] =='undefined'){ markericon ='';} else { markericon = locations[i][7];}
+            marker = new google.maps.Marker({
+                icon: markericon,
+                position: new google.maps.LatLng(locations[i][5], locations[i][6]),
+                map: map,
+                title: locations[i][0],
+                desc: description,
+                tel: telephone,
+                email: email,
+                web: web
+            });
+link = '';            bindInfoWindow(marker, map, locations[i][0], description, telephone, email, web, link);
+     }
+ function bindInfoWindow(marker, map, title, desc, telephone, email, web, link) {
+      var infoWindowVisible = (function () {
+              var currentlyVisible = false;
+              return function (visible) {
+                  if (visible !== undefined) {
+                      currentlyVisible = visible;
+                  }
+                  return currentlyVisible;
+               };
+           }());
+           iw = new google.maps.InfoWindow();
+           google.maps.event.addListener(marker, 'click', function() {
+               if (infoWindowVisible()) {
+                   iw.close();
+                   infoWindowVisible(false);
+               } else {
+                   var html= "<div style='color:#000;background-color:#fff;padding:5px;width:150px;'><h4>"+title+"</h4></div>";
+                   iw = new google.maps.InfoWindow({content:html});
+                   iw.open(map,marker);
+                   infoWindowVisible(true);
+               }
+        });
+        google.maps.event.addListener(iw, 'closeclick', function () {
+            infoWindowVisible(false);
+        });
+ }
+}
+</script>
+<style>
+    #map {
+        height:500px;
+        width:100%;
+    }
+    .gm-style-iw * {
+        display: block;
+        width: 100%;
+    }
+    .gm-style-iw h4, .gm-style-iw p {
+        margin: 0;
+        padding: 0;
+    }
+    .gm-style-iw a {
+        color: #4272db;
+    }
+</style>
+
+<div id='map'></div>
+
+<footer class="footer container">
+  <h1 class="footer__title">See you there.</h1>
+  <p class="cfooter__credit">Created with <i class="fa fa-heart" aria-hidden="true"></i> by <a href="http://www.loganmanuel.com">Logan Manuel</a></p>
+  <p class="footer__copyright">
+    Copyright &#169; 2016.
+  </p>
+</footer>
+
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="/javascripts/particles.js"></script><script src="/javascripts/all.js"></script>
+  </body>
+</html>
